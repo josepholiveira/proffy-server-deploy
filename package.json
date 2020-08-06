@@ -6,7 +6,8 @@
   "scripts": {
     "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-    "knex:rollback": "knex --knexfile knexfile.ts migrate:rollback"
+    "knex:rollback": "knex --knexfile knexfile.ts migrate:rollback",
+    "build": "tsc"
   },
   "dependencies": {
     "cors": "^2.8.5",
